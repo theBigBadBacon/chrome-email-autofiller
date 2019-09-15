@@ -1,0 +1,28 @@
+{
+    "name": "Email auto-filler",
+    "version": "1.0",
+    "description": "Generates unique email addresses that auto-fills email fields on sites. Perfect when you need to create several unique accounts. You are able to configure your own email domain as well.",
+    "permissions": ["storage"],
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/icon-16.png",
+        "48": "images/icon-48.png",
+        "128": "images/icon-128.png"
+      }
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "js": ["content.js"]
+      }
+    ],
+    "icons": {
+      "16": "images/icon-16.png",
+      "48": "images/icon-48.png",
+      "128": "images/icon-128.png"
+    },
+    "manifest_version": 2
+  }
