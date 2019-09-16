@@ -1,7 +1,7 @@
 {
-    "name": "Email auto-filler",
-    "version": "1.0",
-    "description": "Generates unique email addresses that auto-fills email fields on sites. Perfect when you need to create several unique accounts. You are able to configure your own email domain as well.",
+    "name": "Email auto-filler 5000 XX eXtreme",
+    "version": "1.1",
+    "description": "Generates unique email addresses that auto-fills email fields on sites. You are able to configure your own email domain as well.",
     "permissions": ["storage"],
     "browser_action": {
       "default_popup": "popup.html",
