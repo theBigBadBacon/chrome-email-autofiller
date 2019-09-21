@@ -2,7 +2,7 @@
     "name": "Form filler 5000 XX eXtreme",
     "version": "1.2",
     "description": "Generates unique email addresses that auto-fills email fields. Optional - configure your own email and other form fields.",
-    "permissions": ["storage"],
+    "permissions": ["storage", "activeTab"],
     "browser_action": {
       "default_popup": "popup.html",
       "default_icon": {
