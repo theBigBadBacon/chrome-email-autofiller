@@ -64,6 +64,27 @@
             #toggler.is-inactive ~ .email-settings {
                 opacity: 0.5;
             }
+            #extras-toggler {
+                height: 20px;
+                width: 20px;
+                padding: 0;
+            }
+            #extras-toggler.is-open + .email-settings-extras {
+                max-height: 150px;
+            }
+            .email-settings-extras {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 200ms;
+            }
+            .email-settings-extras > label {
+                font-size: 12px;
+                padding: 0 10px 0 0;
+            }
+            .email-settings-extras > input {
+                font-size: 12px;
+                padding: 0 10px;
+            }
         </style>
     </head>
     <body>
@@ -71,10 +92,20 @@
         <h2>Email config:</h2>
         <div class="email-settings">
             <script src="popup.js"></script>
-            <label for="email-name">Name:</label>
+            <label for="email-name">Email Name:</label>
             <input type="text" id="email-name" value="test+" />
-            <label for="email-domain">Domain:</label>
+            <label for="email-domain">Email Domain:</label>
             <input type="text" id="email-domain" value="mail.com" />
+            <label for="extras-toggler">Extra config:</label>
+            <button id="extras-toggler">+</button>
+            <div class="email-settings-extras">
+                <label for="name">Name:</label>
+                <input type="text" id="name" value="Test" />
+                <label for="password">Password:</label>
+                <input type="text" id="password" value="TestPassword" />
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" value="010101010101" />
+            </div>
             <button id="saveEmailSettings">SAVE</button>
         </div>
     </body>
